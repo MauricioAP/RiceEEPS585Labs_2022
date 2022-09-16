@@ -1,0 +1,18 @@
+acquistion.py
+It creates simple onshore-like acquisition geometries
+> python3 acquistion.py X Y dx dy paddx paddy
+
+model_view.py
+It visualizes 2D velocity models. Usage:
+> python3 model_view.py synthmodel2D.npy or SEGsaltmodel.npy
+Example: > python3 model_view.py synthmodel2D.npy
+
+migration2D.py
+It implements RTM, produces seismic image and illumination maps. Usages:
+> python3 migration2D.py synthmodel2D or SEGsaltmodel
+Example: > python3 migration2D.py synthmodel2D
+
+ill_view.py
+It visualizes illumination maps produced by migration2D.py tool. Usage:
+> python3 ill_view.py file.npy shot#
+Example: > python3 ill_view.py file.npy 1
