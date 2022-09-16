@@ -12,7 +12,7 @@
 
 1.1 create 2 different onshore-like acquistion plans (using acquisition.py)
 
-1.2 run the illumination tool (migration2D.py)with the SEG model for the 2 acquisions of 1.1
+1.2 run the illumination tool (illumination2D.py) with the SEG model for the 2 acquisions of 1.1
 
 1.3 visualize the corresponding illumination maps (ill_view.py)
 

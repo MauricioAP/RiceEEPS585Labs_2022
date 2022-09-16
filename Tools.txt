@@ -7,10 +7,10 @@ It visualizes 2D velocity models. Usage:
 > python3 model_view.py synthmodel2D.npy or SEGsaltmodel.npy
 Example: > python3 model_view.py synthmodel2D.npy
 
-migration2D.py
-It implements RTM, produces seismic image and illumination maps. Usages:
-> python3 migration2D.py synthmodel2D or SEGsaltmodel
-Example: > python3 migration2D.py synthmodel2D
+illumination2D.py
+It implements illumincation, produces seismic illumination maps. Usages:
+> python3 illumination2D.py synthmodel2D or SEGsaltmodel
+Example: > python3 illumination2D.py synthmodel2D
 
 ill_view.py
 It visualizes illumination maps produced by migration2D.py tool. Usage:

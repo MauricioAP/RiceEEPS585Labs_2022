@@ -56,12 +56,17 @@ nr = 100
 rloc = np.linspace( start, stop, nr ).astype(np.int32)
 
 # data structure with experimental septup
-case = caseStruct( model.name, freq, nt, ns, nr, sloc, rloc, 4, 10 )
+skip_factor = 10
+case = caseStruct( model.name, freq, nt, ns, nr, sloc, rloc, 4, skip_factor )
 
 print("Experiment main parameters:\n", case)
 # running simulation
 traces, waves = modeling( model, case )
+print( waves.shape )
+sill = np.zeros( (waves.shape[0], waves.shape[2], waves.shape[3]), dtype=np.float32)
+for i in range(waves.shape[1]):
+    sill[:,:,:] += waves[:,i,:,:] * waves[:,i,:,:]
 
 # saving unsorted  seismic data to disk
-#print('Saving source ill (sill_'+sys.argv[1]+'.npy) to disk', sill.shape)
-#np.save( 'sill_'+sys.argv[1]+'.npy', sill )
+print('Saving source ill (sill_'+sys.argv[1]+'.npy) to disk', sill.shape)
+np.save( 'sill_'+sys.argv[1]+'.npy', sill )

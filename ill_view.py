@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 def input_file_desc( fname ):
     print( '\n Trace file: '+fname )
     imaps = np.load( fname )
-    print( ' Shots: 0 - '+str(imaps.shape[0]-2)+', Depth: '+str(imaps.shape[2])+', X dimension: '+str(imaps.shape[1]) )
-    print( ' Shot: '+str(imaps.shape[0]-1)+' is an aggregation of the shots illumination maps' )
+    print( ' Shots: 0 - '+str(imaps.shape[0]-1)+', Depth: '+str(imaps.shape[2])+', X dimension: '+str(imaps.shape[1]) )
+    print( ' Shot: '+str(imaps.shape[0])+' is an aggregation of the shots illumination maps' )
 
     return imaps
 

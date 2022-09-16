@@ -358,7 +358,7 @@ def migrating( model, case ):
 
   # Loop over shots
   for shot in range(case.ns):
-    print( "Processing shot %d" % shot )
+    print( "Processing shot %d of %d" % (shot,case.ns) )
     (simaps[ shot, :, : ], rimaps[ shot, :, : ], images[ shot, :, : ]) = mig_shot( case, shot, model.vel, params, coeffs, wavelet )
     simaps[ -1, :, : ] += simaps[ shot, :, : ]
     rimaps[ -1, :, : ] += rimaps[ shot, :, : ]
