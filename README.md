@@ -21,7 +21,7 @@
 The report needs to be delivered by **10/16/2022**, it should contain description of the results for item (1-3), *bonus* is optional and if achieved correctly it will be added to the final exam score.
 
 ---
-**Lab 2:** Seismic Modeling and Imaging (09/30/2022)
+**Lab 2:** Seismic Modeling and Imaging (09/30/2022)\
 Modeling, run the wave modeling application (modeling2D.py) on two different models (simple layered and SEG/EAGE).
 
 2.1 For layered model (3 layers, 300x400) with a shot located in the middle of the surface,
