@@ -16,3 +16,23 @@ ill_view.py
 It visualizes illumination maps produced by migration2D.py tool. Usage:
 > python3 ill_view.py file.npy shot#
 Example: > python3 ill_view.py file.npy 1
+
+modeling2D.py
+It solve wave equation and store wavefields and traces. Usage:
+> python3 modeling2D.py synthmodel2D or SEGsaltmodel
+Example: > python3 modeling2D.py synthmodel2D
+
+traces_view.py
+It visualizes unsorted traces produced by modeling2D.py tool. Usage:
+> python3 traces_view.py file.npy shot# time_start time_end
+Example: > python3 traces_view.py file.npy 1 100 500
+
+waves_view.py
+It visualizes 2D wave fields produced by modeling2D.py tool. Usage:
+> python3 waves_view.py file.npy shot# step
+Example: > python3 waves_view.py file.npy 1 100
+
+migration2D.py
+It implements RTM, produces seismic image and illumination maps. Usages:
+> python3 migration2D.py synthmodel2D or SEGsaltmodel
+Example: > python3 migration2D.py synthmodel2D
